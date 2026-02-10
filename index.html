@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio Bryan Lucas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      :root {
+        --azul-principal: #036bfd;
+      }
+
+      
+
+      header {
+        background-color: var(--azul-principal);
+        padding: 10px;
+        display: flex;
+        justify-content: end;
+      }
+
+      nav {
+        width: 50%;
+        color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      nav > span {
+        color: white;
+        font-size: 1.3em;
+      }
+
+      main {
+        height: 100vh;
+        background-color: #f3f3f3;
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 60% 1fr;
+      }
+
+      #perfil {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.151);
+        grid-row: 1 / 2;
+        grid-column: 2 / -2;
+      }
+
+      #perfil div {
+        width: 130px;
+        height: 130px;
+        border: 3px solid #036bfd;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+      }
+
+      #conteudo {
+        grid-row: 3 / -1;
+        grid-column: 2 / -2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="material-symbols-outlined"> home </span>
+        <span class="material-symbols-outlined"> neurology </span>
+        <span class="material-symbols-outlined"> school </span>
+        <span class="material-symbols-outlined"> dark_mode </span>
+        <span class="material-symbols-outlined"> brightness_5 </span>
+      </nav>
+    </header>
+    <main>
+      <article id="perfil">
+        <div><p>imagem</p></div>
+        <h2>Bryan Lucas</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga
+          tempore nisi sint vel? Dolor quia, deserunt, eos iure natus, similique
+          voluptates est ipsum ut eligendi maiores assumenda fugit inventore!
+        </p>
+        <ul>
+          <li>
+            <i class="bi bi-instagram"></i>
+          </li>
+          <li>
+            <i class="bi bi-linkedin"></i>
+          </li>
+          <li>
+            <i class="bi bi-youtube"></i>
+          </li>
+          <li>
+            <i class="bi bi-github"></i>
+          </li>
+        </ul>
+      </article>
+
+      <section id="conteudo"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
