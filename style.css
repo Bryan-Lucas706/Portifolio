@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --azul-principal: #036bfd;
+  --azul-escuro: #035fde;
+  --azul-claro: #589dfd;
+
+  --fonte-nome: "Carattere", cursive;
+}
+
+header {
+  background-color: var(--azul-principal);
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav span {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+nav span:hover {
+  cursor: pointer;
+  color: var(--azul-escuro);
+  background-color: var(--azul-claro);
+}
+
+main {
+  height: 100vh;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: auto 1fr;
+}
+
+#perfil {
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 1px 1px 5px rgba(57, 57, 57, 0.151);
+  grid-row: 1 / 2;
+  grid-column: 2 / -2;
+  padding: 10px;
+}
+
+#perfil #foto {
+  width: 200px;
+  height: 200px;
+  border: 4px solid var(--azul-principal);
+  border-radius: 50%;
+  padding: 4px;
+  margin: auto;
+}
+
+#perfil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#perfil h2 {
+  font-family: var(--fonte-nome);
+  font-size: 2.4em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--azul-escuro);
+  padding: 5px;
+}
+
+#perfil p {
+  text-align: justify;
+  padding: 5px;
+}
+
+#perfil #redes {
+  display: flex;
+  justify-content: center;
+}
+#perfil #redes i {
+  color: var(--azul-escuro);
+  font-size: 1.6em;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+#perfil #redes i:hover {
+  color: var(--azul-claro);
+}
+
+#conteudo {
+  grid-row: 2 / -1;
+  grid-column: 2 / -2;
+
+  background-color: #fff;
+  margin-top: 25px;
+  font-size: 1.2em;
+  padding: 15px;
+  color: var(--azul-escuro);
+}
