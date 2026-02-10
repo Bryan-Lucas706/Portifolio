@@ -23,7 +23,7 @@ header {
 }
 
 nav {
-  width: 50%;
+  width: 300px;
   color: #fff;
   display: flex;
   justify-content: space-around;
