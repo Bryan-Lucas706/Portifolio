@@ -167,3 +167,11 @@ main {
   background-color: var(--azul-claro);
   border-radius: 5px;
 }
+
+
+@media screen and (min-width:768px){
+  #container-skills{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
