@@ -118,19 +118,15 @@ main {
 }
 
 #skills {
-  background-color: #fff;
+  background-color: var(--branco);
   border-radius: 10px;
   padding: 10px;
   box-shadow: 1px 1px 5px var(--sombra);
 }
 
-#skills h2 {
+article h2 {
   color: var(--azul-destaque);
   padding-bottom: 20px;
-}
-
-#skills h2 > i {
-  color: var(--azul-destaque);
 }
 
 #container-skills {
@@ -175,11 +171,7 @@ main {
   padding: 10px;
   border-radius: 10px;
   margin-top: 20px;
-}
-
-#formacao h2 {
-  color: var(--azul-destaque);
-  padding-bottom: 20px;
+  box-shadow:  1px 1px 5px var(--sombra);
 }
 
 #formacao-container {
@@ -211,6 +203,54 @@ main {
   color: var(--azul-claro);
   font-size: 1.1em;
 }
+
+#projetos{
+  background-color: var(--branco);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow:  1px 1px 5px var(--sombra);
+}
+
+#projetos-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#projetos-container .projeto{
+  background-color: var(--fundo);
+  border-radius: 10px;
+  border-left: 5px solid var(--azul-claro);
+  padding: 10px;
+}
+
+#projetos-container .projeto:hover{
+  transition: 0.5s 0.1s;
+  border-left-width: 15px;
+  border-color: var(--azul-destaque);
+  cursor: pointer;
+}
+
+#projetos-container .imagem-projeto{
+  height: 250px;
+  border-radius: 8px;
+
+  background-position: center center;
+  background-size: cover;
+
+}
+
+#projetos-container .data{
+  font-size: 0.9em;
+  padding: 8px 0px 3px 0px;
+}
+
+#projetos-container .nome-projeto{
+  text-decoration: none;
+  color: var(--preto);
+}
+
 
 @media screen and (min-width: 768px) {
   #container-skills {
